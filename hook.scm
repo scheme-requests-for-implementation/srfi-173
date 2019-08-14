@@ -43,4 +43,4 @@
 
     (define (hook-run hook . args)
       (assume (= (length args) (hook-arity hook)))
-      (for-each (lambdaa (proc) (apply proc args)) (hook-procs hook)))))
+      (for-each (lambda (proc) (apply proc args)) (hook-procs hook)))))
