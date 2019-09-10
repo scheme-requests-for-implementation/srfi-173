@@ -1,5 +1,4 @@
-(import (chibi test))
-
+(import (scheme base) (chibi test) (hook))
 
 ;; test hook->list and make-hook
 (test 0 (length (hook->list (make-hook 0))))
@@ -33,5 +32,6 @@
           (let ((increment (lambda () (set! counter (+ counter 1))))
                 (decrement (lambda () (set! counter (- counter 1)))))
             (hook-add! hook increment)
+            (hook-add! hook decrement)
             (hook-run hook)
             counter)))

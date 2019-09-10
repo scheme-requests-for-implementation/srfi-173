@@ -10,14 +10,14 @@
 
   (import (scheme base))
 
-  (import (srfi srfi-145))
+  (import (srfi 145))
 
   (begin
 
     (define-record-type <hook>
       (%make-hook procs arity)
       hook?
-      (proc hook-procs hook-procs!)
+      (procs hook-procs hook-procs!)
       (arity hook-arity hook-arity!))
 
     (define (make-hook arity)
