@@ -45,3 +45,14 @@
             (hook-add! hook decrement)
             (hook-run hook)
             counter)))
+
+;; test list->hook!
+(test 0 (let* ((counter 0)
+               (increment (lambda () (set! counter (+ counter 1))))
+               (decrement (lambda () (set! counter (- counter 1))))
+               (hook (make-hook 0)))
+          (list->hook! hook (list increment decrement))
+          (hook-add! hook increment)
+          (hook-add! hook decrement)
+          (hook-run hook)
+          counter))
