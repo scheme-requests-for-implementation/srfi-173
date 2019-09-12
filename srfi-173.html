@@ -70,7 +70,13 @@
     <h3 id="hook-obj"><code>(hook? obj)</code></h3>
 
     <p>Return <code>#t</code> if <code>obj</code> is a hook.
-      Otherwise, it returns <code>#f</code>.</p>
+        Otherwise, it returns <code>#f</code>.</p>
+
+    <h3 id="list-hook-lst"><code>(list->hook arity lst)</code></h3>
+
+    <p>Create a <code>hook</code> with the given procedures <code>LST</code>
+        that must have an arity equal to <code>ARITY</code>. The return value
+        is a <code>hook</code> object.</p>
 
     <h3 id="hook-add-hook-proc"><code>(hook-add! hook proc)</code></h3>
 

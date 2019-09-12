@@ -2,6 +2,7 @@
 
   (export make-hook
           hook?
+          list->hook
           hook-add!
           hook-delete!
           hook-reset!
@@ -22,6 +23,9 @@
 
     (define (make-hook arity)
       (%make-hook '() arity))
+
+    (define (list->hook arity lst)
+      (%make-hook lst arity))
 
     (define (hook-add! hook proc)
       (let ((procs (hook-procs hook)))
