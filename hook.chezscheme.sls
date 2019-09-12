@@ -12,7 +12,7 @@
 
   (import (scheme base))
 
-  (import (srfi 145))
+  (import (srfi :145))
 
   (begin
 
