@@ -4,7 +4,7 @@
 
 This repository hosts [[https://srfi.schemers.org/srfi-173/][SRFI 173]]: Hooks, a [[https://srfi.schemers.org/][Scheme Request for Implementation]].
 
-This SRFI is in /draft/ status.
+This SRFI is in /final/ status.
 
 The full documentation for this SRFI can be found in the [[https://srfi.schemers.org/srfi-173/srfi-173.html][SRFI Document]].
 
