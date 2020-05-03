@@ -4,6 +4,8 @@
 
 
 
+keywords: [[https://srfi.schemers.org/?keywords=miscellaneous][Miscellaneous]]
+
 This repository hosts [[https://srfi.schemers.org/srfi-173/][SRFI 173]]: Hooks, a [[https://srfi.schemers.org/][Scheme Request for Implementation]].
 
 This SRFI is in /final/ status.
