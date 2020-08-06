@@ -36,6 +36,12 @@
       <li>Draft #1 published: 2019-08-14</li>
       <li>Draft #2 published: 2019-09-18</li>
       <li>Finalized: 2019-10-24</li>
+      <li>Revised to fix errata:
+	<ul>
+          <li>2016-08-06 (Use "it is an error" instead of "must" per
+	    the convention in R7RS Small section 1.3.2
+	    (<a href="https://small.r7rs.org/attachment/r7rs.pdf">PDF</a>)
+	    and <a href="https://www.ietf.org/rfc/rfc2119.html">RFC 2119</a>.)</li></ul></li>
     </ul>
 
     <h2 id="abstract">Abstract</h2>
@@ -110,8 +116,8 @@
 
     <p>Apply all procedures from <code>HOOK</code> to the arguments
       <code>ARGS</code>. The order of the procedure application is not
-      specified. The return value is not specified. The length of
-      <code>ARGS</code> must be equal to the arity of the
+      specified. The return value is not specified. It is an error if
+      the length of <code>ARGS</code> is not equal to the arity of the
       <code>HOOK</code> object.</p>
 
     <p>In a Scheme with invokable objects, hooks can invoked directly.</p>
